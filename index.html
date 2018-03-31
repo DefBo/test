@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<!-- Modal button -->
+    <button type="button" class="btn custom_modal_btn" data-toggle="modal" data-target=".bs-example-modal-lg">Открыть</button>
+    <!-- Modal element -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="cross-icon" aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Аналитика по площадкам</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="tabbable-panel">
+                        <div class="tabbable-line">
+                        	<!-- Tab menu -->
+                            <ul class="nav nav-tabs ">
+                                <li class="active">
+                                    <a href="#tab_default_1" data-toggle="tab">
+									Таблица </a>
+                                </li>
+                                <li>
+                                    <a href="#tab_default_2" data-toggle="tab">
+									График </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                            	<!-- First tab -->
+                                <div class="tab-pane active" id="tab_default_1">
+                                    <h5 class="table-title">Аналитика даных в таблице</h5>
+                                    <table id="main-table" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Preview</th>
+                                                <th>Время</th>
+                                                <th>Статус</th>
+                                                <th class="column-force-width">Площадка</th>
+                                                <th>Тип</th>
+                                                <th>Цена</th>
+                                                <th>Активность</th>
+                                                <th>Подписок</th>
+                                                <th>Пол</th>
+                                                <th>Возраст</th>
+                                                <th>СРА</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <input type="text" class="square-custom-input" placeholder="От" readonly>
+                                                    <input type="text" class="square-custom-input" placeholder="До" readonly>
+                                                </td>
+                                                <td>
+                                                    <select name="custom-select" id="" class="custom-select">
+                                                        <option value="1">Все</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="search-custom-input" placeholder="Поиск...">
+                                                </td>
+                                                <td>
+                                                    <select name="custom-select" id="" class="custom-select">
+                                                        <option value="1">Все</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="square-custom-input" placeholder="От">
+                                                    <input type="text" class="square-custom-input" placeholder="До">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="square-custom-input" placeholder="&hearts;, от">
+                                                    <input type="text" class="square-custom-input" placeholder="&hearts;, до">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="square-custom-input" placeholder="От">
+                                                    <input type="text" class="square-custom-input" placeholder="До">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="square-custom-input" placeholder="&#9794;, от">
+                                                    <input type="text" class="square-custom-input" placeholder="&#9794;, до">
+                                                </td>
+                                                <td>
+                                                    <select name="custom-select" id="" class="custom-select">
+                                                        <option value="1">Все</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="square-custom-input" placeholder="От">
+                                                    <input type="text" class="square-custom-input" placeholder="До">
+                                                </td>
+                                                <td>
+                                                    <i class="fas fa-filter fa-lg"></i>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="">
+                                                    <a href="#">
+							            			<img src="img/tinyrick.jpg">
+							            		</a>
+                                                </td>
+                                                <td class="align-left">
+                                                    16.07.17
+                                                    <br /> 16:10
+                                                </td>
+                                                <td>
+                                                    <i class="fas fa-check fa-lg"></i>
+                                                </td>
+                                                <td class="platform-cell align-left">
+                                                    <img src="img/fry.png" alt="">
+                                                    <a href="#">КиноКайф - Лучшие фильмы</a>
+                                                    <i class="fab fa-vk"></i>
+                                                </td>
+                                                <td>
+                                                    <a class="popover-trigger" class="btn" href="#" data-content="Информационны пост" rel="popover" data-placement="top" data-trigger="hover">
+																<i class="fas fa-info fa-lg"></i>
+															</a>
+                                                </td>
+                                                <td>7 375 р.</td>
+                                                <td class="activity-cell">
+                                                    <span><i class="fas fa-heart"></i> 0</span>
+                                                    <br />
+                                                    <span class="repost"><i class="fas fa-bullhorn"></i> 0</span>
+                                                    <span class="comment"><i class="fas fa-comments"></i> 0</span>
+                                                </td>
+                                                <td class="align-right">0</td>
+                                                <td>
+                                                    <i class="fas fa-ban fa-lg"></i>
+                                                </td>
+                                                <td>
+                                                    <i class="fas fa-ban fa-lg"></i>
+                                                </td>
+                                                <td>
+                                                    <i class="fas fa-ban fa-lg"></i>
+                                                </td>
+                                                <td class="activity-cell">
+                                                    <i class="fas fa-info-circle fa-lg"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="">
+                                                    <a href="#">
+							            			<img src="img/tinyrick.jpg">
+							            		</a>
+                                                </td>
+                                                <td class="align-left">
+                                                    16.07.17
+                                                    <br /> 09:17
+                                                </td>
+                                                <td>
+                                                    <i class="fas fa-check fa-lg"></i>
+                                                </td>
+                                                <td class="platform-cell align-left">
+                                                    <img src="img/fry.png" alt="">
+                                                    <a href="#">ПРИКОЛЫ | Смеяка</a>
+                                                    <i class="fab fa-vk"></i>
+                                                </td>
+                                                <td>
+                                                    <a class="popover-trigger" class="btn" href="#" data-content="Информационны пост" rel="popover" data-placement="top" data-trigger="hover">
+																<i class="fas fa-info fa-lg"></i>
+															</a>
+                                                </td>
+                                                <td>7 550 р.</td>
+                                                <td class="activity-cell">
+                                                    <span><i class="fas fa-heart"></i> 22060</span>
+                                                    <br />
+                                                    <span class="repost"><i class="fas fa-bullhorn"></i> 176</span>
+                                                    <span class="comment"><i class="fas fa-comments"></i> 0</span>
+                                                </td>
+                                                <td class="align-right red-text">2 875</td>
+                                                <td class="chart-cell">
+                                                    <div id="pie-chart1"></div>
+                                                </td>
+                                                <td>
+                                                    <div id="column-chart-1"></div>
+                                                </td>
+                                                <td class="align-right red-text">
+                                                    2.6 p.
+                                                </td>
+                                                <td class="activity-cell">
+                                                    <i class="fas fa-info-circle fa-lg"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="">
+                                                    <a href="#">
+							            			<img src="img/tinyrick.jpg">
+							            		</a>
+                                                </td>
+                                                <td class="align-left">
+                                                    16.07.17
+                                                    <br /> 09:15
+                                                </td>
+                                                <td>
+                                                    <i class="fas fa-check fa-lg"></i>
+                                                </td>
+                                                <td class="platform-cell align-left">
+                                                    <img src="img/fry.png" alt="">
+                                                    <a href="#">Бот Максим</a>
+                                                    <i class="fab fa-vk"></i>
+                                                </td>
+                                                <td>
+                                                    <a class="popover-trigger" class="btn" href="#" data-content="Информационны пост" rel="popover" data-placement="top" data-trigger="hover">
+																<i class="fas fa-info fa-lg"></i>
+															</a>
+                                                </td>
+                                                <td>5 162 р.</td>
+                                                <td class="activity-cell">
+                                                    <span><i class="fas fa-heart"></i>  2314</span>
+                                                    <br />
+                                                    <span class="repost"><i class="fas fa-bullhorn"></i> 5</span>
+                                                    <span class="comment"><i class="fas fa-comments"></i> 183</span>
+                                                </td>
+                                                <td class="align-right red-text">1 869</td>
+                                                <td class="chart-cell">
+                                                    <div id="pie-chart2"></div>
+                                                </td>
+                                                <td>
+                                                    <div id="column-chart-2"></div>
+                                                </td>
+                                                <td class="align-right red-text">
+                                                    2.8 p.
+                                                </td>
+                                                <td class="activity-cell">
+                                                    <i class="fas fa-info-circle fa-lg"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="">
+                                                    <a href="#">
+							            			<img src="img/tinyrick.jpg">
+							            		</a>
+                                                </td>
+                                                <td class="align-left">
+                                                    15.06.17
+                                                    <br /> 16:10
+                                                </td>
+                                                <td>
+                                                    <i class="far fa-clone"></i>
+                                                </td>
+                                                <td class="platform-cell align-left">
+                                                    <img src="img/fry.png" alt="">
+                                                    <a href="#">КиноКайф - Лучшие фильмы</a>
+                                                    <i class="fab fa-vk"></i>
+                                                </td>
+                                                <td>
+                                                    <a class="popover-trigger" class="btn" href="#" data-content="Информационны пост" rel="popover" data-placement="top" data-trigger="hover">
+																<i class="fas fa-info fa-lg"></i>
+															</a>
+                                                </td>
+                                                <td>7 375 р.</td>
+                                                <td class="activity-cell">
+                                                    <span><i class="fa fa-heart fa-lg"></i>  9406</span>
+                                                    <br />
+                                                    <span class="repost"><i class="fas fa-bullhorn"></i> 28</span>
+                                                    <span class="comment"><i class="fas fa-comments"></i> 0</span>
+                                                </td>
+                                                <td class="align-right red-text">2 446</td>
+                                                <td class="chart-cell">
+                                                    <div id="pie-chart3"></div>
+                                                </td>
+                                                <td>
+                                                    <div id="column-chart-3"></div>
+                                                </td>
+                                                <td class="align-right red-text">
+                                                    3.0 p.
+                                                </td>
+                                                <td class="activity-cell">
+                                                    <i class="fas fa-info-circle fa-lg"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="">
+                                                    <a href="#">
+							            			<img src="img/tinyrick.jpg">
+							            		</a>
+                                                </td>
+                                                <td class="align-left">
+                                                    15.06.17
+                                                    <br /> 13:16
+                                                </td>
+                                                <td>
+                                                    <i class="far fa-clock fa-lg"></i>
+                                                </td>
+                                                <td class="platform-cell align-left">
+                                                    <img src="img/fry.png" alt="">
+                                                    <a href="#">ПРИКОЛЫ | Смеяка</a>
+                                                    <i class="fab fa-vk"></i>
+                                                </td>
+                                                <td>
+                                                    <a class="popover-trigger" class="btn" href="#" data-content="Информационны пост" rel="popover" data-placement="top" data-trigger="hover">
+																<i class="fas fa-info fa-lg"></i>
+															</a>
+                                                </td>
+                                                <td>7 550 р.</td>
+                                                <td class="activity-cell">
+                                                    <span><i class="fas fa-heart"></i> 17092</span>
+                                                    <br />
+                                                    <span class="repost"><i class="fas fa-bullhorn"></i> 741</span>
+                                                    <span class="comment"><i class="fas fa-comments"></i> 0</span>
+                                                </td>
+                                                <td class="align-right red-text">3 644</td>
+                                                <td class="chart-cell">
+                                                    <div id="pie-chart4"></div>
+                                                </td>
+                                                <td>
+                                                    <div id="column-chart-4" style=""></div>
+                                                </td>
+                                                <td class="align-right red-text">
+                                                    2.1 p.
+                                                </td>
+                                                <td class="activity-cell">
+                                                    <i class="fas fa-info-circle fa-lg"></i>
+                                                </td>
+                                            </tr>
+                                    </table>
+                                </div>
+                                <!-- Second tab -->
+                                <div class="tab-pane" id="tab_default_2">
+                                    <h5 class="table-title">Аналитика даных в графике</h5>
+                                    <div id="mainchart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
